@@ -109,7 +109,7 @@ router.post("/:plate", (req, res) => {
             let html2send = ejs.compile(read(path, 'utf8'), { filename: path })({
                 vehicle: Object.keys(reports[req.params.plate].vehicle).map(k => reports[req.params.plate].vehicle[k]).join(" "),
                 location: Object.keys(req.body.coords).map(k => req.body.coords[k]).join(" "),
-                timestamp: req.body.timestamp
+                timestamp: new Date(req.body.timestamp).toISOString(),
             });
             
             let mailOptions = {
