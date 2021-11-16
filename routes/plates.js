@@ -70,11 +70,10 @@ router.post("/generate", (req, res) => {
 router.post("/:plate/alert", (req, res) => {  
     if (reports[req.params.plate] !== undefined) {
         
-        reports[req.params.plate].hasReport = true;
+        reports[req.params.plate].hasReport = req.body.hasReport === undefined ? true : req.body.hasReport;
 
         saveReports(reports);
         
-        // TODO: Enviar notificacion robo de auto
 
         return res.status(201).send(reports[req.params.plate]);
     } else {
