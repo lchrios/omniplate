@@ -26,7 +26,7 @@ def majorityElement( A ):
 reader = easyocr.Reader(['en'])
 #camera = cv2.VideoCapture(1) 
 
-for i in range(5): #while true
+for i in range(432): #while true
     #img = camera.read()
     img = cv2.imread('images/Cars'+str(i)+'.png')
 
@@ -96,7 +96,7 @@ for i in range(5): #while true
 
     print(r.text)
 
-    key = cv2.waitKey(42000)
+    key = cv2.waitKey(2000)
     if key == 27:#if ESC is pressed, exit loop
         cv2.destroyAllWindows()
         break

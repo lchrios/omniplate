@@ -142,8 +142,21 @@ router.post("/:plate", (req, res) => {
         }
 
     } else {
+        // * register plate
+        reports[req.params.plate] = {
+            "hasReport": false,
+            "owner": {
+                "name": "Christopher Ortega",
+                "email": "chrortegita@gmail.com",
+                "phone": "+5213111228981"
+            },
+            "reports": {
+                [req.body.timestamp]: req.body.coords,
+            }
+        };
+        console.log("New palte added: ".concat(req.params.plate))
         return res.status(204).send({
-            "message": "Plate number is not registered in our Database",
+            "message": "Plate number is not registered in our Database, but now has been added",
             "plate": req.body.plate
         });
     }

@@ -9,7 +9,7 @@
 		},
 		"owner": {
 			"name": "Christopher Ortega",
-			"email": "a01634500@itesm.mx",
+			"email": "chrortegita@gmail.com",
 			"phone": "+5213111228981"
 		},
 		"reports": {
@@ -56,6 +56,30 @@
 			"1982200075900": {
 				"latitud": 83.69696969,
 				"longitud": -69.6969696969
+			},
+			"1983200075900": {
+				"latitud": 83.69696969,
+				"longitud": -69.6969696969
+			},
+			"1637037253241": {
+				"latitud": -108,
+				"longitud": -108
+			},
+			"1637097378498": {
+				"latitud": 126,
+				"longitud": -137
+			},
+			"1637097742936": {
+				"latitud": 138,
+				"longitud": 138
+			},
+			"1637097865095": {
+				"latitud": 162,
+				"longitud": 127
+			},
+			"1637098125516": {
+				"latitud": -120,
+				"longitud": -75
 			}
 		}
 	},
@@ -76,6 +100,26 @@
 			"1637027518369": {
 				"latitud": 63.17011093972181,
 				"longitud": -160.89578551675862
+			},
+			"1637037296719": {
+				"latitud": 47,
+				"longitud": 86
+			},
+			"1637097422914": {
+				"latitud": 14,
+				"longitud": -20
+			},
+			"1637097786764": {
+				"latitud": -153,
+				"longitud": -129
+			},
+			"1637097908763": {
+				"latitud": -139,
+				"longitud": 52
+			},
+			"1637098129178": {
+				"latitud": -32,
+				"longitud": 16
 			}
 		}
 	},
@@ -96,6 +140,26 @@
 			"1637027560966": {
 				"latitud": 22.86313068511484,
 				"longitud": 154.87904629812596
+			},
+			"1637037339331": {
+				"latitud": 143,
+				"longitud": -19
+			},
+			"1637097465560": {
+				"latitud": -118,
+				"longitud": 149
+			},
+			"1637097829458": {
+				"latitud": 40,
+				"longitud": 88
+			},
+			"1637097951316": {
+				"latitud": -149,
+				"longitud": -118
+			},
+			"1637098131802": {
+				"latitud": 169,
+				"longitud": 152
 			}
 		}
 	},
@@ -116,6 +180,26 @@
 			"1637027603357": {
 				"latitud": -148.78566535557758,
 				"longitud": -127.34989335009202
+			},
+			"1637037381564": {
+				"latitud": 21,
+				"longitud": 162
+			},
+			"1637097507768": {
+				"latitud": -134,
+				"longitud": 139
+			},
+			"1637097993536": {
+				"latitud": -131,
+				"longitud": -84
+			},
+			"1637098134044": {
+				"latitud": 90,
+				"longitud": 4
+			},
+			"1637098196219": {
+				"latitud": 160,
+				"longitud": 24
 			}
 		}
 	},
@@ -136,6 +220,236 @@
 			"1637027646974": {
 				"latitud": 102.87599926903931,
 				"longitud": 75.11639344200216
+			},
+			"1637037383222": {
+				"latitud": -96,
+				"longitud": -12
+			},
+			"1637098037447": {
+				"latitud": -71,
+				"longitud": 25
+			},
+			"1637098137901": {
+				"latitud": 3,
+				"longitud": -163
+			}
+		}
+	},
+	"802.LN": {
+		"hasReport": false,
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637098146638": {
+				"latitud": -103,
+				"longitud": 20
+			}
+		}
+	},
+	"[OR SIEK": {
+		"hasReport": false,
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637098157861": {
+				"latitud": 60,
+				"longitud": 80
+			}
+		}
+	},
+	"0u8216": {
+		"hasReport": false,
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637098162061": {
+				"latitud": -136,
+				"longitud": 177
+			}
+		}
+	},
+	"ALR 486": {
+		"hasReport": false,
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637098164670": {
+				"latitud": 47,
+				"longitud": -73
+			}
+		}
+	},
+	"[io": {
+		"hasReport": false,
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637098166900": {
+				"latitud": -91,
+				"longitud": 3
+			}
+		}
+	},
+	"File": {
+		"hasReport": false,
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637098175864": {
+				"latitud": 41,
+				"longitud": -7
+			}
+		}
+	},
+	"MAMKAJ": {
+		"hasReport": false,
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637098185366": {
+				"latitud": 122,
+				"longitud": 153
+			}
+		}
+	},
+	"ULICB": {
+		"hasReport": false,
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637098187623": {
+				"latitud": -83,
+				"longitud": -149
+			},
+			"1637098200720": {
+				"latitud": 41,
+				"longitud": -20
+			}
+		}
+	},
+	"BYHA  1j6": {
+		"hasReport": false,
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637098191894": {
+				"latitud": 157,
+				"longitud": -22
+			},
+			"1637098230435": {
+				"latitud": 121,
+				"longitud": -73
+			}
+		}
+	},
+	"ATd": {
+		"hasReport": false,
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637098209373": {
+				"latitud": 170,
+				"longitud": 73
+			}
+		}
+	},
+	"DLZC N 5617": {
+		"hasReport": false,
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637098211807": {
+				"latitud": 18,
+				"longitud": -103
+			}
+		}
+	},
+	"00": {
+		"hasReport": false,
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637098216741": {
+				"latitud": 24,
+				"longitud": -29
+			}
+		}
+	},
+	"FAST": {
+		"hasReport": false,
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637098219207": {
+				"latitud": 19,
+				"longitud": 59
+			}
+		}
+	},
+	"HH15BD8877": {
+		"hasReport": false,
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637098223812": {
+				"latitud": 164,
+				"longitud": 131
+			}
+		}
+	},
+	"yntzdeg": {
+		"hasReport": false,
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637098228149": {
+				"latitud": -93,
+				"longitud": 148
 			}
 		}
 	}
