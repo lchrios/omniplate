@@ -1,0 +1,130 @@
+{
+	"KLO1CA2555": {
+		"hasReport": true,
+		"vehicle": {
+			"brand": "Mazda",
+			"model": "Mazda3",
+			"year": "2016",
+			"color": "red"
+		},
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637027476172": {
+				"latitud": -62.85341046970824,
+				"longitud": 54.249456506281206
+			},
+			"1637027518369": {
+				"latitud": 63.17011093972181,
+				"longitud": -160.89578551675862
+			},
+			"1700000000000": {
+				"latitud": 63.69696969,
+				"longitud": -169.6969696969
+			},
+			"1701200025900": {
+				"latitud": 63.69696969,
+				"longitud": -169.6969696969
+			},
+			"1701200075900": {
+				"latitud": 83.69696969,
+				"longitud": -69.6969696969
+			},
+			"1801200075900": {
+				"latitud": 83.69696969,
+				"longitud": -69.6969696969
+			},
+			"1851200075900": {
+				"latitud": 83.69696969,
+				"longitud": -69.6969696969
+			},
+			"1951200075900": {
+				"latitud": 83.69696969,
+				"longitud": -69.6969696969
+			}
+		}
+	},
+	"PGoMN112": {
+		"hasReport": false,
+		"vehicle": {
+			"brand": "Toyota",
+			"model": "Prius",
+			"year": "2018",
+			"color": "silver"
+		},
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637027518369": {
+				"latitud": 63.17011093972181,
+				"longitud": -160.89578551675862
+			}
+		}
+	},
+	"PREALNLR": {
+		"hasReport": false,
+		"vehicle": {
+			"brand": "Mazda",
+			"model": "Mazda2",
+			"year": "2016",
+			"color": "red"
+		},
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637027560966": {
+				"latitud": 22.86313068511484,
+				"longitud": 154.87904629812596
+			}
+		}
+	},
+	"DZIZ YXR": {
+		"hasReport": false,
+		"vehicle": {
+			"brand": "Chevrolet",
+			"model": "Malibu",
+			"year": "2016",
+			"color": "white"
+		},
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637027603357": {
+				"latitud": -148.78566535557758,
+				"longitud": -127.34989335009202
+			}
+		}
+	},
+	"PuiB": {
+		"hasReport": false,
+		"vehicle": {
+			"brand": "Mazda",
+			"model": "Mazda3",
+			"year": "2019",
+			"color": "white"
+		},
+		"owner": {
+			"name": "Christopher Ortega",
+			"email": "chrortegita@gmail.com",
+			"phone": "+5213111228981"
+		},
+		"reports": {
+			"1637027646974": {
+				"latitud": 102.87599926903931,
+				"longitud": 75.11639344200216
+			}
+		}
+	}
+}
