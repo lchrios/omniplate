@@ -9,7 +9,7 @@
 		},
 		"owner": {
 			"name": "Christopher Ortega",
-			"email": "chrortegita@gmail.com",
+			"email": "a01634500@itesm.mx",
 			"phone": "+5213111228981"
 		},
 		"reports": {
@@ -42,6 +42,18 @@
 				"longitud": -69.6969696969
 			},
 			"1951200075900": {
+				"latitud": 83.69696969,
+				"longitud": -69.6969696969
+			},
+			"1961200075900": {
+				"latitud": 83.69696969,
+				"longitud": -69.6969696969
+			},
+			"1981200075900": {
+				"latitud": 83.69696969,
+				"longitud": -69.6969696969
+			},
+			"1982200075900": {
 				"latitud": 83.69696969,
 				"longitud": -69.6969696969
 			}

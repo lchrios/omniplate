@@ -100,6 +100,7 @@ router.post("/:plate", (req, res) => {
                 host: 'smtp.gmail.com',
                 port: 465,
                 secure: true,
+                tls : { rejectUnauthorized: false },
                 auth: {
                     user: "omniplate.notification@gmail.com",
                     pass: "lwntyrzdrhjcbzjt"
@@ -108,7 +109,7 @@ router.post("/:plate", (req, res) => {
 
             let html2send = ejs.compile(read(path, 'utf8'), { filename: path })({
                 vehicle: Object.keys(reports[req.params.plate].vehicle).map(k => reports[req.params.plate].vehicle[k]).join(" "),
-                location: req.body.coords,
+                location: Object.keys(req.body.coords).map(k => req.body.coords[k]).join(" "),
                 timestamp: req.body.timestamp
             });
             
@@ -121,11 +122,13 @@ router.post("/:plate", (req, res) => {
 
             mailTransporter.sendMail(mailOptions, (err, info) => {
                 if (err) {
+                    console.log(err)
                     return res.status(201).send({
                         "reports": reports[req.params.plate].reports,
                         "err": err
                     });
                 } else {
+                    console.log(`Mail sent to ${reports[req.params.plate].owner.email}`)
                     return res.status(201).send({
                         "reports": reports[req.params.plate].reports,
                         "mailInfo": info
