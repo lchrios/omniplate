@@ -16,6 +16,7 @@ const apiComs = () => {
 
     if (tid === 0) {
         MPI.recv('found', (msg) => {
+            console.log("FOUND incoming");
             let timestamp = Object.keys(msg.reports)[Object.keys(msg.reports).length - 1];
             sendMail(
                 msg.reports[timestamp],
@@ -30,13 +31,18 @@ const apiComs = () => {
         });
     } else {
         MPI.recv('plate', (msg) => {
+            console.log("PLATE incoming");
             if (reports[msg.plate] !== undefined) {
                 // * found plate
+                console.log("FOUND outgoing");
+            
                 MPI.send(msg.tid, {type: "found", content: {
                     plate: msg.plate,
                     ...reports[msg.plate]
                 }});
             } else {
+                
+                console.log("NOT-FOUND outgoing");
                 // * found plate
                 MPI.send(msg.tid, {type: "not-found", content: {
                     message: "plate not found", tid: MPI.rank
