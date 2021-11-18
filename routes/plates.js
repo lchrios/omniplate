@@ -9,6 +9,43 @@ var join = require('join');
 var path = __dirname.concat("\\mails\\found\\foundcar.ejs");
 var read = require('fs').readFileSync;
 
+var MPI = require('mpi-node')
+const apiComs = () => {
+
+    const tid = MPI.rank;
+
+    if (tid === 0) {
+        MPI.recv('found', (msg) => {
+            let timestamp = Object.keys(msg.reports)[Object.keys(msg.reports).length - 1];
+            sendMail(
+                msg.reports[timestamp],
+                timestamp,
+                msg.owner.email,
+                msg.vehicle 
+            )
+        });
+
+        MPI.recv('not-found', (msg) => {
+            console.log(`Node ${msg.tid}: couldn't find plate ${msg.plate}`)
+        });
+    } else {
+        MPI.recv('plate', (msg) => {
+            if (reports[msg.plate] !== undefined) {
+                // * found plate
+                MPI.send(msg.tid, {type: "found", content: {
+                    plate: msg.plate,
+                    ...reports[msg.plate]
+                }});
+            } else {
+                // * found plate
+                MPI.send(msg.tid, {type: "not-found", content: {
+                    message: "plate not found", tid: MPI.rank
+                }});
+            }
+        });
+    }
+}
+
 router.post("/generate", (req, res) => {
     let users = [
         {
@@ -93,6 +130,11 @@ router.post("/:plate", (req, res) => {
 
         saveReports(reports);
         
+        MPI.broadcast({type: "plate", content: {
+            plate: req.params.plate,
+            tid: MPI.rank
+        }})
+
         if (reports[req.params.plate].hasReport) {
             let mailTransporter = nodemailer.createTransport({
                 service: 'gmail',
