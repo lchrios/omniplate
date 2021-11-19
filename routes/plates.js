@@ -9,11 +9,11 @@ var join = require('join');
 var path = __dirname.concat("\\mails\\found\\foundcar.ejs");
 var read = require('fs').readFileSync;
 
-var MPI = require('mpi-node')
-const apiComs = () => {
+var MPI = require('mpi-node');
 
+MPI.init(() => {
     const tid = MPI.rank;
-
+    console.log(`This is node ${tid}`)
     if (tid === 0) {
         MPI.recv('found', (msg) => {
             console.log("FOUND incoming");
@@ -23,19 +23,19 @@ const apiComs = () => {
                 timestamp,
                 msg.owner.email,
                 msg.vehicle 
-            )
+            );
         });
-
-        MPI.recv('not-found', (msg) => {
-            console.log(`Node ${msg.tid}: couldn't find plate ${msg.plate}`)
-        });
+            
+            MPI.recv('not-found', (msg) => {
+                console.log(`Node ${msg.tid}: couldn't find plate ${msg.plate}`)
+            });
     } else {
         MPI.recv('plate', (msg) => {
             console.log("PLATE incoming");
             if (reports[msg.plate] !== undefined) {
                 // * found plate
                 console.log("FOUND outgoing");
-            
+                
                 MPI.send(msg.tid, {type: "found", content: {
                     plate: msg.plate,
                     ...reports[msg.plate]
@@ -50,8 +50,8 @@ const apiComs = () => {
             }
         });
     }
-}
-
+});
+    
 router.post("/generate", (req, res) => {
     let users = [
         {

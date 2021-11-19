@@ -8,6 +8,7 @@ import requests
 import random
 import time
 import math
+
 def majorityElement( A ):
     majority = '' 
     count = 0 
